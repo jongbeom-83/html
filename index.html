@@ -1,46 +1,597 @@
-<!doctype html>
-
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>HTML Example</title>
-  
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/about.css">
+<title>Molly bootstrap Website Template| Home :: w3layouts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<link href="web/css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="web/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+<!--/fonts-->
+<!--js--> 
+<script src="web/js/jquery.min.js"></script>
+<!--/js-->
+<!--animated-css-->
+<link href="web/css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="web/js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!--/animated-css-->
+<!--gallery-->
+<script type="text/javascript" src="web/js/modernizr.custom.53451.js"></script>
+<script type="text/javascript" src="web/js/jquery.gallery.js"></script>
+<script type="text/javascript">
+		$(function() {
+		$('#dg-container').gallery({
+		autoplay	:	true
+	});
+});
+</script>
+<!--/gallery-->
+<!--script-->
+<script type="text/javascript" src="web/js/move-top.js"></script>
+<script type="text/javascript" src="web/js/easing.js"></script>
+<!--/script-->
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+
+
 </head>
 <body>
-  <section class="center">
-    <aside class="sidebar"></aside>
-    
-    <section class="contents">
-      <!-- page will be include here -->
-      <section id="page" class="page">
-        <section id="about">
-          <section class="frame">
-            <h2><b>HELLO</b>WORLD</h2>
-            
-            <div class="cat">
-              <div class="picture">
-                <img src="images/mew.png" alt="Mew">
-              </div>
-              <small>Mew</small>
-            </div>
-            <div class="cat">
-              <div class="picture">
-                <img src="images/siesta.png" alt="Siesta">
-              </div>
-              <small>Siesta</small>
-            </div>
-            <div class="cat">
-              <div class="picture">
-                <img src="images/tiger.png" alt="Tiger">
-              </div>
-              <small>Tiger</small>
-            </div>
-          </section>
-        </section>
-      </section>
-    </section>
-  </section>
+<!--top-nav-->
+<div class="top-nav">
+	 <div class="container">
+		 <div class="logo">
+		    <a href="#"><img src="web/images/logo.png" class="img-responsive" alt=""/></a>
+		 </div>
+	     <div class="nav">
+		     <span class="menu"> </span> 
+			 <ul>
+				 <li><a class="scroll" href="#home">HOME</a></li>
+				 <li><a class="scroll" href="#services">SERVICES</a></li>
+				 <li><a class="scroll" href="#portfolio">PORTFOLIO</a></li>
+				 <li><a class="scroll" href="#about">ABOUT</a></li>
+				 <li><a class="scroll" href="#development">DEVELOPMENT</a></li>
+				 <li><a class="scroll" href="#contact">CONTACT</a></li>
+				 <div class="clearfix"> </div>
+			 </ul>
+		 </div>
+		 <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+		 $(".nav ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+		 <!--script-nav-->
+
+	 </div>
+</div>
+<!--top-nav ends-->
+<!--banner-->
+<div id="home" class="banner">
+     <div class="banner-head">
+	     <div class="container">
+		      <!--banner Slider starts Here-->
+	  			<script src="web/js/responsiveslides.min.js"></script>
+			   <script>
+					// You can also use "$(window).load(function() {"
+					$(function () {
+					  // Slideshow 4
+					  $("#slider4").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: false,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+						  $('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+						  $('.events').append("<li>after event fired.</li>");
+						}
+					  });
+				
+					});
+			  </script>
+			 <!--//End-slider-script-->
+			 <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			         <li>
+						  <div class="banner-head-info"> 
+							 <h4>모바일 앱 제작<span> LemonApps </span></h4>
+							 <h1><font color="#ffe500">LEMON APPS</font></h1>
+							 
+				            <h3><font color="#ffffff">고객들을 위한 경험 많은 전문가들이 기다리고 있습니다.<br><br>1:1 맞춤형 제작으로 사업 성공을 위한최고의 파트너가 되어 드립니다.</font></h3>
+							
+							 <div class="banner-Get-started">
+								<a href="#">GET STARTED</a>
+							 </div>
+						  </div>
+			         </li>
+
+			      </ul>
+			  </div>
+			    <div class="clearfix"> </div>
+	      </div>
+     </div>
+</div>
+<!--banner-->
+<!--SERVICES-->
+<div id="services" class="services">
+	 <h2>SERVICES</h2>
+	 <img src="web/images/service.png" alt=""/>
+	 <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus 
+	 convallis quis ac lectus. Quisque velit nisi,pretium ut lacinia in, elementum id enim.</p>
+	 <div class="container">
+		 <div class="service-grids">
+			  <div class="col-md-3 service-grid">
+				  <img src="web/Images/icon1.png" >
+
+				  <h4>WEB DESIGN</h4>
+				  <p>Donec sollicitudin molestie malesuada. Curabitur 
+				  aliquet quam id dui posuere blandit.</p>
+			  </div>
+			  <div class="col-md-3 service-grid">
+				  <img src="web/Images/icon2.png">
+				 
+				  <h4>GRAPHIC DESIGN</h4>
+				  <p>Donec sollicitudin molestie malesuada. Curabitur 
+				  aliquet quam id dui posuere blandit.</p>
+			  </div>
+	  		  <div class="col-md-3 service-grid">
+				  <img src="web/Images/icon3.png">
+				 
+				  <h4>PHOTOGRAPHY</h4>
+				  <p>Donec sollicitudin molestie malesuada. Curabitur 
+				  aliquet quam id dui posuere blandit.</p>
+			  </div>
+	  		  <div class="col-md-3 service-grid">
+				  <img src="web/Images/icon4.png">
+				  <h4>DEVELOPING</h4>
+				  <p>Donec sollicitudin molestie malesuada. Curabitur 
+				  aliquet quam id dui posuere blandit.</p>
+		      </div>
+			<div class="clearfix"></div>
+			<div class="service-grids">
+			  <div class="col-md-3 service-grid">
+				  <img src="web/Images/icon1.png">
+				 
+				  <h4>WEB DESIGN</h4>
+				  <p>Donec sollicitudin molestie malesuada. Curabitur 
+				  aliquet quam id dui posuere blandit.</p>
+			  </div>
+			  <div class="col-md-3 service-grid">
+				  <img src="web/Images/icon2.png">
+				 
+				  <h4>GRAPHIC DESIGN</h4>
+				  <p>Donec sollicitudin molestie malesuada. Curabitur 
+				  aliquet quam id dui posuere blandit.</p>
+			  </div>
+	  		  <div class="col-md-3 service-grid">
+				  <img src="web/Images/icon3.png">
+				 
+				  <h4>PHOTOGRAPHY</h4>
+				  <p>Donec sollicitudin molestie malesuada. Curabitur 
+				  aliquet quam id dui posuere blandit.</p>
+			  </div>
+	  		  <div class="col-md-3 service-grid">
+				  <img src="web/Images/icon4.png">
+				  <h4>DEVELOPING</h4>
+				  <p>Donec sollicitudin molestie malesuada. Curabitur 
+				  aliquet quam id dui posuere blandit.</p>
+		      </div>
+			<div class="clearfix"></div>
+			
+			<div class="service-grids">
+			
+			 <div class="col-md-6 skill-grid">
+				  <img src="web/Images/icon1.png">
+					
+				  <h3><b>WEB DESIGN</b></h3>
+				  <p>Donec sollicitudin molestie malesuada. Curabitur 
+				  aliquet quam id dui posuere blandit.</p>
+			  </div>
+			   <div class="col-md-6 skill-grid">
+				  <img src="web/Images/icon2.png">
+
+				  <h3><b>WEB DESIGN</b></h3>
+				  <p>Donec sollicitudin molestie malesuada. Curabitur 
+				  aliquet quam id dui posuere blandit.</p>
+			  </div>
+			 </div></div>
+			<div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!--SERVICE-->
+
+<!--SERVICES BANNER-->
+<div class="service-banner">
+	  <div class="service-banner-layer">
+	     <div class="container service-banner-layer-info">
+	          <div class="col-md-6 tab">
+			  <span></span>
+			  </div>
+	           <div class="col-md-6 service-info">
+			      <h3>WE MAKE WEB DESIGN</h3>
+			      <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. 
+			      Quisque velit nisi, pretium ut lacinia in, elementum id enim.Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+			      <div class="service-nav">
+					  <ul>
+					  <li><a href="#"><span></span>CLEAN AND MODERN DESIGN</a></li> 
+					  <li><a href="#"><span></span>FULLY RESPONSIVE</a></li> 
+					  <li><a href="#"><span></span>SINGLEPAGE & MULTIPAGE</a></li> 
+					  <li><a href="#"><span></span>GREAT FOR ANY BUSSINESS</a></li> 
+					  </ul>
+			     </div>
+		      </div>
+		      <div class="clearfix"></div>
+	     </div>
+      </div>
+	 <!--SERVICES Footer-->	  
+	 <div class="service-footer">
+		  <div class="Get-started">
+			  <a href="#">GET STARTED</a>
+		  </div>
+	 </div>
+	 <!--SERVICES Footer-->	  
+</div>
+<!--SERVICES BANNER ENDS-->
+
+<!--portfolio-->
+<div id="portfolio" class="portfolio">
+   <div class="portfolio-head">
+	 <h2>PORTFOLIO</h2>
+	 <img src="web/images/service.png" alt=""/>
+	 <p>스마트폰 초창기 세대부터 업종별로 다양한 모바일앱, 웹앱을 제작해왔습니다.</p>
+	 <div class="container">
+
+     <div class="clearfix"></div>	
+	</div>
+</div>	  
+<!-- Script for gallery Here-->
+<script type="text/javascript" src="web/js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		var filterList = {
+		init: function () {
+// MixItUp plugin
+// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+	});				
+},
+		hoverEffect: function () {
+// Simple parallax effect
+		$('#portfoliolist .portfolio').hover(
+			function () {
+			$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+			$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+			},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+			}		
+		);				
+	}
+};
+// Run the show!
+		filterList.init();
+	});	
+</script>
+<!--Gallery Script Ends-->
+<div class="clearfix"></div>
+
+</div>
+  <div class="clearfix"></div>
+<div class="portfolio-video"> 
+	  <div class="portfolio-video-grids">
+		<div class="col-md-6 video">
+			
+				<table width='100%' border='0px'>
+				<tbody>
+				<tr>
+					<td colspan="4" align='center' style=" text-align: center; background-color:#324651; border-right:none;"><h4><font color="#ffffff"><b>업종별 홈페이지 / 어플</b></font></h4>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 25.0000%; font-size: 0.9em; text-align: center; background-color:#e8eef1; border-right:none;"><br>회사/업체/홍보<br><br>미용/뷰티/마사지<br><br>개인/영업/정치인<br><br>이삿짐/렌탈/정수기<br><br>웨딩/스튜디오<br><br>네트워크마케팅<br><br>커뮤니티/동호회<br><br></td>
+					<td style="width: 25.0000%; font-size: 0.9em; text-align: center; background-color:#fafafa; border-right:none;"><br>학원/교육/유학원<br><br>병원/성형/요양<br><br>레저/캠핑/야영<br><br>카센터/렌터카<br><br>협회/기관<br><br>카드/대출/보험<br><br>심부름센터/콜센터<br><br></td>
+					<td style="width: 25.0000%; font-size: 0.9em; text-align: center; background-color:#e8eef1; border-right:none;"><br>유치원/아동/어린이집<br><br>요식/음식업<br><br>펜션/호텔/숙박<br><br>사우나/찜질방<br><br>공연/전시/박람회<br><br>프랜차이즈<br><br>인터넷뉴스/보도<br><br></td>
+					<td style="width: 25.0000%; font-size: 0.9em; text-align: center; background-color:#fafafa; border-right:none;"><br>헬스장/체육관/운동<br><br>인테리어/건축<br><br>교회/성당/사찰<br><br>농장/수목원/과수원<br><br>다이어트제품영업<br><br>컴퓨터/인터넷<br><br>지역정보(맛집/뷰티)<br><br></td>
+				</tr>
+					
+				</tbody>
+			</table>
+		  </div>
+
+
+		  <div class="molly">
+				<h3>업종별 맞춤형 컨설팅</h3>
+		  </div>
+
+				<div class="service-nav">
+					  <ul>
+					  <li><a href="#"><font size=4 ><span></span>CLEAN AND MODERN DESIGN</font></a></li> 
+					  <li><a href="#"><span></span>FULLY RESPONSIVE</a></li> 
+					  <li><a href="#"><span></span>SINGLEPAGE & MULTIPAGE</a></li> 
+					  <li><a href="#"><span></span>GREAT FOR ANY BUSSINESS</a></li> 
+					  </ul>
+			     </div>
+
+
+		  <div class="clearfix"></div>
+	  </div>
+  </div>
+</div>
+<!--portfolio-->
+<!--MOLLY-->
+<div class="molly">
+<h3>MOLLY IS GREAT FOR ANY BUSSINESS</h3>
+<p><i>Yes Mentum is fully responsive,and look's great on any device.</i></p>
+<div class="molly-Get-started">
+  <a href="#">GET STARTED</a>
+</div>
+<div class="clearfix"></div>
+<section id="dg-container" class="dg-container">
+   <center>
+   <div class="dg-wrapper">
+
+		<a href="#"><img src="web/images/p1.png" alt="" /></a>
+		<a href="#"><img src="web/images/p2.png" alt="" /></a>
+		<a href="#"><img src="web/images/p3.png" alt="" /></a>
+		<a href="#"><img src="web/images/p4.png" alt="" /></a>
+		<a href="#"><img src="web/images/p5.png" alt="" /></a>
+		<a href="#"><img src="web/images/p6.png" alt="" /></a>
+		<a href="#"><img src="web/images/p7.png" alt="" /></a>
+		<a href="#"><img src="web/images/p8.png" alt="" /></a>
+		<a href="#"><img src="web/images/p9.png" alt="" /></a>
+		<a href="#"><img src="web/images/p10.png" alt="" /></a>
+		<a href="#"><img src="web/images/p11.png" alt="" /></a>
+		<a href="#"><img src="web/images/p12.png" alt="" /></a>
+		<a href="#"><img src="web/images/p13.png" alt="" /></a>
+		<a href="#"><img src="web/images/p14.png" alt="" /></a>
+		<a href="#"><img src="web/images/p15.png" alt="" /></a>
+		<a href="#"><img src="web/images/p16.png" alt="" /></a>
+		<a href="#"><img src="web/images/p17.png" alt="" /></a>
+		<a href="#"><img src="web/images/p18.png" alt="" /></a>
+		<a href="#"><img src="web/images/p19.png" alt="" /></a>
+		<a href="#"><img src="web/images/p20.png" alt="" /></a>
+		<a href="#"><img src="web/images/p21.png" alt="" /></a>
+		<a href="#"><img src="web/images/p22.png" alt="" /></a>
+		<a href="#"><img src="web/images/p23.png" alt="" /></a>
+
+
+		<!--<img src="web/images/p4.png" alt="" />
+		<img src="web/images/p5.png" alt="" />
+		<img src="web/images/p6.png" alt="" />
+		<img src="web/images/p7.jpg" alt="" />
+		<img src="web/images/p8.png" alt="" />
+		<img src="web/images/p9.png" alt="" />
+		<img src="web/images/p10.png" alt="" />
+		<img src="web/images/p11.png" alt="" />
+		<img src="web/images/p12.png" alt="" />
+		<img src="web/images/p13.png" alt="" />
+		<img src="web/images/p14.png" alt="" />
+		<img src="web/images/p15.png" alt="" />
+		<img src="web/images/p16.png" alt="" />-->
+
+	</div>
+   </center>	
+</section>
+ </div>
+<!--MOLLY ends-->
+
+<!--ABOUT-->
+ <div id="about" class="about">
+	 <h2>ABOUT US</h2>
+	 <img src="web/images/service.png" alt=""/>
+	 <p>고객들을 위한 경험 많은 전문가들이 기다리고 있습니다. 1:1 맞춤형 제작으로 사업 성공을 위한 최고의 파트너가 되어 드립니다.</p>
+	 <div class="about-grids">
+		 <div class="col-md-4 left-img">
+		 <img src="web/images/company.jpg" class="img-responsive" alt=""/>
+		 </div>
+		 <div class="col-md-4 middle">
+			 <a href="#"><h3></h3></a>
+			 <h5>CREATIVE DIRECTOR</h5>
+			 <h6>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta 
+			 dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt..</h6>
+			 <h6>Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Pellentesque in ipsum id orci porta 
+			 dapibus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt..</h6>
+			  <div class="social-icons">
+				 <a href="#"><span class="icon1"> </span></a>
+				 <a href="#"><span class="icon2"> </span></a>
+				 <a href="#"><span class="icon3"> </span></a>
+			 </div>
+		 </div>
+		 <div class="col-md-4 right-img">
+		 <img src="web/images/head.jpg" class="img-responsive" alt=""/>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!---ABOUT ends-->
+<!--AD-->
+<div class="ad">
+	 <div class="container">
+		 <div class="ad-grids">
+			 <div class="col-md-6 skill-grid">
+				 <h4>SKILLS</h4>
+				 <div class="skill-head">
+					  <p>ANDROID & IPHONE</p>
+					  <span><lable></lable></span>
+					  <p>SERVER</p>
+					  <span><lable></lable></span>
+					  <p>HTML5 | CSS3 | J-Query</p>
+					  <span><lable></lable></span>
+					  <p>DESIGN</p>
+					  <span><lable></lable></span>
+				 </div>
+			 </div>
+		 
+			 <div class="col-md-6 skill-about">
+				  <h4>ABOUT COMPANY</h4>
+				 <h6>정직, 신뢰, 성실한 마인드로 고객과의 약속과 보안을 지켜드리며 지속적인 파트너쉽을 유지할 수 있는 최적의 방안을 제시해 드립니다. </h6>
+				 <h6>프로젝트 맞춤형 개발 인력으로 구성되어 있고, 고객의 비즈니스에 대한 충분한 이해와 설계를 바탕으로 시스템 분석,설계부터 구축,운영,마케팅까지 체계적이고 통합적인 고퀄리티 관리 서비스를 제공해 드립니다.</h6>
+				 <h6>최신 트렌드에 맞는 기기버젼의 다양하고 편리한 인터페이스를 위해 UX/UI 기술을 끊임없이 연구하고 개발함으로서 항상 최적의 품질 체계와 기술을 유지합니다.</h6>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!--AD ends-->
+<!--BLOG-->
+<div id="development" class="blog">
+	 <h2>BLOG</h2>
+	 <img src="web/images/service.png" alt=""/>
+	 <p>Creative of the idea & Innovations</p>
+
+	 <div class="blog-grids">
+		 <div class="container">
+			 <div class="col-md-6 blog-left">
+				 <img src="web/images/h1blog.jpg" class="img-responsive" alt=""/>
+				 <div class="blog-img-info">
+					 <h3><a href="#">무제한 PUSH 알림</a></h3>
+					 <p>실시간으로 무제한 단체 푸시 알람, 이미지 푸시,URL 링크 이동 기능으로 고객을 위한 차별화된 이벤트, 광고, 홍보가 가능합니다.
+					 서비스로 제공되는 관리자 페이지를 이용하여 앱을 설치한 고객들과의 직접적인 소통, 마케팅이 가능해집니다.　　　　　　　　　　　　　　　　　　　　　
+					 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</p> 
+					 <div class="clearfix"></div>
+				 </div>
+			 </div>
+
+				
+			 <div class="col-md-6 blog-right">
+				 <img src="web/images/h1blog2.jpg" class="img-responsive" alt=""/>
+				 <div class="blog-img-info">
+					 <h3><a href="#">1:1 채팅기능</a></h3>
+					 <p>카카오톡과 똑같은 오픈채팅 개념의 신기술을 적용하여, 친구 추가 없이 모든 고객과의 직접적인 1:1 채팅이 가능한 새로운 서비스를 제공해드립니다. 통화나 문자확인이 어려운 바쁘신 분들에게
+					 고객의 문의,예약,상담 게시판과 같은 히스토리개념을 카카오톡과 연동하여 제공함으로써 언제 어디서든 폰으로 확인 및 관리가 가능해집니다.</p>
+					 <div class="clearfix"></div>
+				 </div>
+			 </div> 
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+
+	 <div class="blog-grids-bottom">
+		 <div class="container">
+			 <div class="col-md-4 blog-bottom-left">
+				 <img src="web/images/blog1.jpg" class="img-responsive" alt=""/>
+				 <div class="blog-img-info">
+					 <h3><a href="#">크로스 멀티 브라우징</a></h3>
+					 <span><a href="#">----------------------------------------------------</a></span>
+					 <p>새로운 웹표준을 준수하고, 멀티 브라우징에 최적화된 콘텐츠 관리시스템을 제공하며 효율적인 시스템 관리 및 운영이 가능해 집니다.</p>
+					 <div class="clearfix"></div>
+				 </div>
+			 </div>	
+			 <div class="col-md-4 blog-bottom-middle">
+				 <img src="web/images/blog2.jpg" class="img-responsive" alt=""/>
+				 <div class="blog-img-info">
+					 <h3><a href="#">UX/UI 디자인</a></h3>
+					 <span><a href="#">---------------------------------------------------</a></span>
+					 <p>스마트폰, 태블릿, PC 등 다양한 해상도를 지원하는 반응형 UX/UI를 지원하며, 모든 디바이스에 맞는 최적의 반응형 디자인과 UX를 경험 하실 수 있습니다.</p>
+ 					 <div class="clearfix"></div>
+				 </div>
+			 </div> 
+			 <div class="col-md-4 blog-bottom-right">
+				 <img src="web/images/blog3.jpg" class="img-responsive" alt=""/>
+				 <div class="blog-img-info">
+					 <h3><a href="#">HTML5 , CSS3 , J-query</a></h3>
+					 <span><a href="#">------------------------------------------------------------</a></span>
+					 <p>최신 웹표준 기술을 기반으로 다양하고 편리한 인터페이스를 연구하고 개발함으로서 항상 최적의 품질 체계와 기술을 유지합니다.</p>
+					 <div class="clearfix"></div>
+				 </div>
+			 </div> 
+			 <div class="clearfix"></div>
+	     </div>
+	  </div>
+
+</div>
+<!--BLOG Ends-->
+
+<!--SUBSCRIBE-->
+<div class="subscribe">
+	 <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+	 <form>
+		 <input type="text" class="text" value="You mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'You mail';}">
+		 <input type="submit" value="SUBSCRIBE">
+	 </form>
+</div>
+<!--SUBSCRIBE Ends-->
+<!--CONTACT-->
+<div id="contact" class="contact">
+	 <div class="contact-head">
+		 <div class="container">
+			 <h2>CONTACT US</h2>
+			 <img src="web/images/service.png" alt=""/>
+			 <p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus 
+				convallis quis ac lectus. Quisque velit nisi,pretium ut lacinia in, elementum id enim.</p>
+		 </div>
+		 <form>
+			 <input type="text" class="text" value="Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name';}">
+			 <input type="text" class="text" value="Your mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your mail';}">
+			 <input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+			 <textarea onfocus="if(this.value == 'Enter Message Here') this.value='';" onblur="if(this.value == '') this.value='Enter Message Here';" >Enter Message Here</textarea>	
+			 <div class="clearfix"></div>
+			 <input type="submit" value="SEND MESSAGE">
+		 </form>
+	 </div>
+</div>
+<!--CONTACT Ends-->
+<!--FOOTER-->
+<div class="footer">
+	 <div class="footer-head">
+		 <h5>awesomemail(at)ourmail.com</h5>
+		 <h6>(0)123-456-789-00</h6>
+		 <div class="footer-social-icons">
+			 <a href="#"><span class="facebook"> </span></a>
+			 <a href="#"><span class="twitter"> </span></a>
+			 <a href="#"><span class="googleplus"> </span></a>
+			 <a href="#"><span class="wifi"> </span></a>
+			 <a href="#"><span class="tribble"> </span></a>
+			 <a href="#"><span class="flicker"> </span></a>
+			 <a href="#"><span class="skype"> </span></a>
+		 </div>
+		 <p>Template by<a href="http://w3layouts.com/"> W3layouts.</a></p>
+	 </div>
+</div>
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
 </body>
 </html>
